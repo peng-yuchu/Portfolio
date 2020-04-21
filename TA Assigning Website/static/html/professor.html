@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Professor - Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="styles/professor.css">
+	<link href="https://fonts.googleapis.com/css?family=Butcherman|Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"></script>
+    <script type="text/javascript" src="scripts/login.js"></script>
+	<script type="text/javascript" src="scripts/professor.js"></script>
+	<script type="text/javascript">
+	 // This is a jQuery convention to say that once all the files
+	 // load, the function openTab.start() should run.
+	 // This function is defined in the professor.js
+		$(function () {
+		   Courses().start();
+		});
+    </script>
+
+</head>
+
+<body onload="document.getElementById('defaultOpen').click();">
+	<header style="background-color: white; color:black; top:0; font-family:Arial; font-size:100%;">
+		<div class = "header_row">
+			<div class = "wsu_name">
+				<img src = "images/wsu_name_logo.png" style = "width:700px; height:130px;">
+			</div>
+		</div>
+    </header>
+    <div class="n">
+        <div class="professor_name" id="prof_name">Andrew O'fallon</div>
+        <div class="professor_id" id="prof_id">11898634</div>
+        <div class="professor_email" id="prof_email">aofallon@wsu.edu</div>
+    </div>
+    
+	<div class="nav-tabs" role="tablist">
+		<button class="tablink" onclick="openTab(event, 'course')" id="defaultOpen">MY COURSES</button>
+        <button class="tablink" onclick="openTab(event, 'applicants')">APPLICANTS</button>
+		<button class="tablink" onclick="openTab(event, 'preference')">ADD COURSES</button>
+    </div>
+
+    <div id="course" class="tabcontent">
+        <section class="courses_info">
+            <h2 style="color:crimson; text-transform:uppercase;">Courses Teaching</h2>
+            <section class="courses_list">
+                <article class="courses_box">
+                    <div class="curses_info">
+                        <div class="course_name"> Cpts 121</div>
+                        <div class="lab_section_select"> N/A</div>
+                    </div>
+                    <div class="select_button">
+                        <button type="select_btn" class="btn btn-outline-danger">Select</button>
+                        <button type="dele_btn" class="dele_btn btn-outline-danger">Delete</button>
+                    </div>
+
+                </article>
+                <article class="courses_box">
+                    <div class="curses_info">
+                        <div class="course_name"> Cpts 122</div>
+                        <div class="lab_section_select"> Lab Section 1</div>
+                    </div>
+                    <div class="select_button">
+                        <button type="select_btn" class="btn btn-outline-danger">Select</button>
+                    </div>
+                </article>
+                <article class="courses_box">
+                    <div class="curses_info">
+                        <div class="course_name"> Cpts 223</div>
+                        <div class="lab_section_select"> Lab Section 5</div>
+                    </div>
+                    <div class="select_button">
+                        <button type="select_btn" class="btn btn-outline-danger">Select</button>
+                    </div>
+                </article>
+                <article class="courses_box">
+                    <div class="curses_info">
+                        <div class="course_name"> Cpts 260</div>
+                        <div class="lab_section_select"> N/A</div>
+                    </div>
+                    <div class="select_button">
+                        <button type="select_btn" class="btn btn-outline-danger">Select</button>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </div>
+
+     <div id="applicants" class="tabcontent">
+        <section class="courses_info">
+            <h2 style="color:crimson; text-transform:uppercase;">applicants</h2>
+            <section class="applicant_list">
+                <article class="applicant_box">
+                    <div class="applicant_info">
+                        <div class="name">
+                            <div class="n">Name: &nbsp;</div>
+                            <div class="applicant_name">Nick</div>
+                        </div>
+                        <div class="name">
+                            <div class="n">WSU ID: &nbsp; </div>
+                             <div class="applicant_id">11257739</div>
+                        </div>
+                        <div class="name">
+                            <div class="n">Email: &nbsp; </div>
+                            <div class="applicant_email">nick.wheaton@wsu.edu</div>
+                        </div>
+                        <div class="name">
+                            <div class="n">Major: &nbsp; </div>
+                            <div class="applicant_major">Computer Science</div>
+                        </div>
+                        <div class="name">
+                            <div class="n">GPA: &nbsp; </div>
+                            <div class="applicant_gpa">3.5</div>
+                        </div>
+                        <div class="name">
+                            <div class="n">Served Before:  &nbsp;</div>
+                            <div class="applicant_served">No</div>
+                        </div>
+                    </div>
+                    <div class="assign_btn">
+                        <button type="select_btn" class="btn btn-outline-danger">Assign</button>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </div>
+
+    <div id="preference" class="tabcontent">
+        <form id="preference_form" method="POST">
+            <h2 style="color: crimson; text-align:center;">ADD COURSES</h2>
+            <div class="course_teaching">
+                <label class="labels">Course Teaching:</label>
+                <select class="course_teaching_input">
+                    <option value="0">-select-</option>
+                    <option value="Cpts111">Cpts 111</option>
+                    <option value="Cpts115">Cpts 115</option>
+                    <option value="Cpts121">Cpts 121</option>
+                    <option value="Cpts122">Cpts 122</option>
+                    <option value="Cpts131">Cpts 131</option>
+                    <option value="Cpts132">Cpts 132</option>
+                    <option value="Cpts215">Cpts 215</option>
+                    <option value="Cpts223">Cpts 223</option>
+                    <option value="Cpts224">Cpts 224</option>
+                    <option value="Cpts233">Cpts 233</option>
+                    <option value="Cpts260">Cpts 260</option>
+                    <option value="Cpts302">Cpts 302</option>
+                    <option value="Cpts315">Cpts 315</option>
+                    <option value="Cpts317">Cpts 317</option>
+                    <option value="Cpts321">Cpts 321</option>
+                    <option value="Cpts322">Cpts 322</option>
+                    <option value="Cpts323">Cpts 323</option>
+                    <option value="Cpts350">Cpts 350</option>
+                    <option value="Cpts360">Cpts 360</option>
+                    <option value="Cpts370">Cpts 370</option>
+                    <option value="Cpts401">Cpts 401</option>
+                    <option value="Cpts411">Cpts 411</option>
+                    <option value="Cpts415">Cpts 415</option>
+                    <option value="Cpts421">Cpts 421</option>
+                    <option value="Cpts422">Cpts 422</option>
+                    <option value="Cpts423">Cpts 423</option>
+                    <option value="Cpts424">Cpts 424</option>
+                    <option value="Cpts427">Cpts 427</option>
+                    <option value="Cpts430">Cpts 430</option>
+                    <option value="Cpts434">Cpts 434</option>
+                    <option value="Cpts437">Cpts 437</option>
+                    <option value="Cpts438">Cpts 438</option>
+                    <option value="Cpts439">Cpts 439</option>
+                    <option value="Cpts440">Cpts 440</option>
+                    <option value="Cpts442">Cpts 442</option>
+                    <option value="Cpts443">Cpts 443</option>
+                    <option value="Cpts451">Cpts 451</option>
+                    <option value="Cpts452">Cpts 452</option>
+                    <option value="Cpts453">Cpts 453</option>
+                    <option value="Cpts455">Cpts 455</option>
+                    <option value="Cpts460">Cpts 460</option>
+                    <option value="Cpts464">Cpts 464</option>
+                    <option value="Cpts466">Cpts 466</option>
+                    <option value="Cpts471">Cpts 471</option>
+                    <option value="Cpts475">Cpts 475</option>
+                    <option value="Cpts476">Cpts 476</option>
+                    <option value="Cpts478">Cpts 478</option>
+                    <option value="Cpts479">Cpts 479</option>
+                    <option value="Cpts481">Cpts 481</option>
+                    <option value="Cpts483">Cpts 483</option>
+                    <option value="Cpts484">Cpts 484</option>
+                    <option value="Cpts485">Cpts 485</option>
+                    <option value="Cpts486">Cpts 486</option>
+                    <option value="Cpts487">Cpts 487</option>
+                    <option value="Cpts488">Cpts 488</option>
+                    <option value="Cpts489">Cpts 489</option>
+                    <option value="Cpts490">Cpts 490</option>
+                    <option value="Cpts499">Cpts 499</option>
+                </select>
+            </div>
+
+            <div class="lab_section">
+                <label class="labels">Lab Section:</label>
+                <select class="lab_section_input">
+                    <option value="99">-select-</option>
+                    <option value="N/A">No Lab</option>
+                    <option value="Lab Section 1">Lab section 1</option>
+                    <option value="Lab Section 2">Lab section 2</option>
+                    <option value="Lab Section 3">Lab section 3</option>
+                    <option value="Lab Section 4">Lab section 4</option>
+                    <option value="Lab Section 5">Lab section 5</option>
+                    <option value="Lab Section 6">Lab section 6</option>
+                    <option value="Lab Section 7">Lab section 7</option>
+                    <option value="Lab Section 8">Lab section 8</option>
+                    <option value="Lab Section 9">Lab section 9</option>
+                    <option value="Lab Section 10">Lab section 10</option>
+                </select>
+            </div>
+            <input type="submit" class="submit_form_input btn-outline-primary" value="Create Course">
+        </form>
+    </div>
+</body>
+</html>

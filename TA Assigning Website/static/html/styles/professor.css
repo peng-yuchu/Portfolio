@@ -1,0 +1,201 @@
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+header {
+    z-index: 2;
+    position: relative;
+    text-align:left;
+}
+
+
+.nav-tabs{
+    margin-top: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.tablink{
+  display: inline-block;
+  padding: 15px;
+  background-color:crimson;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  float: inherit;
+  overflow: hidden;
+  z-index: 2;
+  position: relative;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 130%;
+  border-radius:5px;
+  width:33%;
+}
+
+.tablink:hover{
+    background-color:grey;
+}
+
+.tabcontent{
+    text-align:center;
+    display: none;
+    margin-top:20px;
+}
+.course_info{
+    position: center;
+}
+form#preference_form{
+    text-align:left;
+    display: block;
+    border: 1px solid crimson;
+    border-radius: 10px;
+	background-color :white;
+	padding: 1% 10% 85px 10%;
+}
+
+.submit_form_input {
+	float: left;
+	width: 170px;
+	font-weight: bold;
+	margin: 20px 0px 20px 0px;
+    margin-top:20px;
+}
+.select_button{
+  padding-top: 5px;
+}
+
+#preference {
+    transform: translate(-50%, -40%);
+    margin-left: 50%;
+    margin-top:130px;
+    padding: 20px;
+    background-color: white;
+}
+
+.course_teaching_input{
+    text-align:right;
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.lab_section_input{
+    text-align:right;
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.labels{
+    color: red;
+    font-size: 20px;
+}
+.courses_list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.courses_box{
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 10px;
+  /* background-color:lightgrey; */
+  border-radius:5px;
+  width:100px;
+  border: 2px solid crimson;
+  border-radius:5px;
+}
+
+.applicant_list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.applicant_box{
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 10px;
+  border: 2px solid crimson;
+  border-radius:5px;
+}
+.applicant_info{
+  position: center;
+}
+.assign_btn{
+  padding-top: 8px;
+}
+
+.btn{
+    padding-top:5px;
+    width:100%;
+}
+.submit_form_input{
+  width: 100%;
+}
+
+.name{
+    display:flex;
+    flex-direction: row;
+}
+
+.n{
+    display: flex;
+    font-size: 30px;
+    border: 2px solid grey;
+  }
+  
+  .professor_name{
+    width:33%;
+    text-align: center;
+  }
+  
+  .professor_id{
+    width:33%;
+    text-align: center;
+  }
+  .professor_email{
+    width:33%;
+    text-align: center;
+  }
+.dele_btn{
+    background-color:white;
+    border: 1px solid crimson;
+    border-radius: 5px;
+    padding-top: 4px;
+    padding-bottom: 8px;
+    vertical-align: center;
+    width:100%;
+}
+
+@media screen and (min-width:1200px){
+    .courses_box{
+        width: 20%;
+    }
+    .applicant_box{
+        width: 20%;
+    }
+}
+@media screen and (min-width:800px) and (max-width: 1200px){
+    .courses_box{
+        width: 30%;
+    }
+    .applicant_box{
+        width: 30%;
+    }
+}
+@media screen and (max-width:800px){
+    .courses_box{
+        width: 40%;
+    }
+    .applicant_box{
+        width: 40%;
+    }
+}

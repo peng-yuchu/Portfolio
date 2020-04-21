@@ -1,0 +1,68 @@
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: rgb(249,249,249);
+}
+
+.login{
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.wsu_logo{
+    text-align: center;
+}
+.section_text{
+  font-weight: bold;
+  color: darkred;
+}
+.username
+{
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.username_input{
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+}
+.password{
+  padding-bottom: 5px;
+}
+.password_input{
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+}
+.submit_btn{
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 5px;
+}
+.submit_login{
+  width: 145px;
+}
+
+.create_btn{
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 5px;
+}
+.create_account{
+  width: 145px;
+}

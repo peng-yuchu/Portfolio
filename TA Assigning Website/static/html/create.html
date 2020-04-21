@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles/create.css">
+
+	<script type="text/javascript" src="scripts/create.js"></script>
+    <script type="text/javascript">
+	// This is a jQuery convention to say that once all the files
+     // load, the function Login.start() should run.
+     // This function is defined in the login.js
+        $(function () {
+           Create().start();
+        });
+    </script>
+
+    <title>Create Account</title>
+</head>
+<body>
+	<div class="header_text">Contact Information</div>
+	<div class="create_account">
+		<form id="create_input" method="POST">
+			<div class="enter_username">
+				<div class="section_text">WSU Email</div>
+				<input type="text" class="enter_username_input" placeholder=" Enter WSU Email" id="Email">
+			</div>
+			<div class="enter_password">
+				<div class="section_text">Password</div>
+				<input type="password" class="enter_password_input" placeholder=" Enter Password" id="Pass">
+			</div>
+			<div class="title">
+				<div class="section_text">Title</div>
+				<select class="title_select" attribute="title" id='Title'>
+					<option value="Professor">Professor</option>
+					<option value="Student">Student</option>
+				</select>
+			</div>
+			<div class="input_name">
+				<div class="section_text">First Name</div>
+				<input type="text" class="name" placeholder=" Enter First Name" id="Name">
+			</div>
+			<div class="input_lastname">
+				<div class="section_text">Last Name</div>
+				<input type="text" class="lastname" placeholder=" Enter Last Name" id="Last">
+			</div>
+			<div class="input_id">
+				<div class="section_text">WSU ID</div>
+				<input type="text" class="id" placeholder=" Enter WSU ID" id="Id">
+			</div>
+			<div class="input_phone">
+				<div class="section_text">Phone Number</div>
+				<input type="text" class="phone" placeholder=" Enter Phone Number" id="Phone">
+			</div>
+			<div class = "buttons">
+				<div class="submit_btn">
+					<input type="submit" class="submit_acc btn btn-outline-primary" value="Submit">
+				</div>
+				<div class="cancel_btn">
+					<input type="button" class="cancel btn btn-outline-primary" value="Cancel" onclick="location.href='login.html';">
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

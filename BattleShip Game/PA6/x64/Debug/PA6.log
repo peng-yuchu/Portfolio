@@ -1,0 +1,33 @@
+﻿  function.c
+C:\Users\Benson\Documents\Peng-Yu Chu-04-06-2018-23-25-11\PA6\function.c(75,1): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1274): message : see declaration of 'scanf'
+C:\Users\Benson\Documents\Peng-Yu Chu-04-06-2018-23-25-11\PA6\function.c(84,1): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1274): message : see declaration of 'scanf'
+C:\Users\Benson\Documents\Peng-Yu Chu-04-06-2018-23-25-11\PA6\function.c(92,1): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1274): message : see declaration of 'scanf'
+C:\Users\Benson\Documents\Peng-Yu Chu-04-06-2018-23-25-11\PA6\function.c(99,1): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1274): message : see declaration of 'scanf'
+C:\Users\Benson\Documents\Peng-Yu Chu-04-06-2018-23-25-11\PA6\function.c(106,1): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1274): message : see declaration of 'scanf'
+C:\Users\Benson\Documents\Peng-Yu Chu-04-06-2018-23-25-11\PA6\function.c(73,6): warning C4101: 'i': unreferenced local variable
+C:\Users\Benson\Documents\Peng-Yu Chu-04-06-2018-23-25-11\PA6\function.c(122,12): warning C4013: 'time' undefined; assuming extern returning int
+  main.c
+C:\Users\Benson\Documents\Peng-Yu Chu-04-06-2018-23-25-11\PA6\main.c(22,1): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1274): message : see declaration of 'scanf'
+C:\Users\Benson\Documents\Peng-Yu Chu-04-06-2018-23-25-11\PA6\main.c(32,1): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1274): message : see declaration of 'scanf'
+C:\Users\Benson\Documents\Peng-Yu Chu-04-06-2018-23-25-11\PA6\main.c(53,1): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1274): message : see declaration of 'scanf'
+C:\Users\Benson\Documents\Peng-Yu Chu-04-06-2018-23-25-11\PA6\main.c(61,1): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1274): message : see declaration of 'scanf'
+C:\Users\Benson\Documents\Peng-Yu Chu-04-06-2018-23-25-11\PA6\main.c(62,1): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1274): message : see declaration of 'scanf'
+C:\Users\Benson\Documents\Peng-Yu Chu-04-06-2018-23-25-11\PA6\main.c(77,1): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1274): message : see declaration of 'scanf'
+C:\Users\Benson\Documents\Peng-Yu Chu-04-06-2018-23-25-11\PA6\main.c(83,1): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1274): message : see declaration of 'scanf'
+C:\Users\Benson\Documents\Peng-Yu Chu-04-06-2018-23-25-11\PA6\main.c(84,1): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1274): message : see declaration of 'scanf'
+C:\Users\Benson\Documents\Peng-Yu Chu-04-06-2018-23-25-11\PA6\main.c(18,6): warning C4101: 'c': unreferenced local variable
+  Generating Code...
+  PA6.vcxproj -> C:\Users\Benson\Documents\Peng-Yu Chu-04-06-2018-23-25-11\x64\Debug\PA6.exe

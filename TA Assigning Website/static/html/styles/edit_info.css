@@ -1,0 +1,189 @@
+﻿body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: rgb(249,249,249);
+}
+.header_text{
+  font-weight: bold;
+  color: darkred;
+  text-align: center;
+  font-size: 35px;
+  transform: translate(0%, 100%);
+}
+.create_account{
+  text-align: center;
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.section_text{
+  font-weight: bold;
+  color: darkred;
+}
+
+.enter_username{
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+}
+
+.enter_username_input{
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.enter_password{
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+}
+
+.enter_password_input{
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+}
+.title{
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+}
+.title_select{
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+}
+.input_name{
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+}
+.name{
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+}
+.input_lastname{
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+}
+.lastname{
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+}
+.input_id{
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+}
+.id{
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+}
+.input_phone{
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+}
+.phone{
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+}
+.enter_major{
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+}
+
+.enter_major_input{
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.enter_gpa{
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+}
+
+.gpa_select{
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+}
+.graduation_date{
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+}
+.month{
+  width: 245px;
+  height: 40px;
+  border-radius: 5px;
+}
+.year{
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.served{
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+}
+.y_n{
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+}
+
+.submit_btn{
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 5px;
+}
+
+.submit_acc{
+  width: 195px;
+}
+
+.cancel_btn{
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 5px;
+}
+
+.cancel{
+  width: 195px;
+}

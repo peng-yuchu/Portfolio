@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student - Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="styles/student.css">
+    <link href="https://fonts.googleapis.com/css?family=Butcherman|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="scripts/login.js"></script>
+    <script type="text/javascript" src="scripts/student.js"></script>
+    <script type="text/javascript">
+	 // This is a jQuery convention to say that once all the files
+	 // load, the function openTab.start() should run.
+	 // This function is defined in the professor.js
+		$(function () {
+		   Student().start();
+		});
+    </script>
+</head>
+
+<body onload="document.getElementById('defaultOpen').click();">
+    <header style="background-color: white; color:white; top:0; font-family:Arial; font-size:150%;">
+        <div class="header_row">
+            <div class="wsu_name">
+                <img src="images/wsu_name_logo.png" style="width:700px; height:130px;">
+            </div>
+        </div>
+    </header>
+    <div class="n">
+        <div class="student_name" id="stud_name"> </div>
+        <div class="student_id" id="stud_id"> </div>
+        <div class="student_email" id="stud_email"> </div>
+    </div>
+    <div class="nav-tabs" role="tablist">
+        <button class="tablink" onclick="openTab(event, 'course')" id="defaultOpen"> APPLIED COURSES </button>
+        <button class="tablink" onclick="openTab(event, 'display_courses')">COURSES</button>
+        <button class="tablink" onclick="openTab(event, 'add-course')"> EDIT INFO </button>
+     </div>
+
+    <div id="course" class="tabcontent">
+        <section class="applied_info">
+            <h2 style="color:grey; text-transform:uppercase;">Courses Applied</h2>
+            <section class="applied_list">
+              <article class="applied_box">
+                <div class = "applied_info">
+                   <div class = "applied_name"> CptS 121 </div>
+                   <div class = "applied_professor"> Andy O'fallon </div>
+                   <div class = "applied_status"> Pending </div>
+                 </div>
+                 <div class = "applied_button">
+                    <button type = "select_btn" class = "del_btn btn-outline-danger"> X </button>
+                </div>
+              </article>
+
+              <article class="applied_box">
+                <div class = "applied_info">
+                   <div class = "applied_name"> CptS 121 </div>
+                   <div class = "applied_professor"> Andy O'fallon </div>
+                   <div class = "applied_status"> Pending </div>
+                 </div>
+                 <div class = "applied_button">
+                    <button type = "select_btn" class = "del_btn btn-outline-danger"> X </button>
+                </div>
+              </article>
+
+              <article class="applied_box">
+                <div class = "applied_info">
+                   <div class = "applied_name"> CptS 121 </div>
+                   <div class = "applied_professor"> Andy O'fallon </div>
+                   <div class = "applied_status"> Pending </div>
+                 </div>
+                 <div class = "applied_button">
+                    <button type = "select_btn" class = "del_btn btn-outline-danger"> X </button>
+                </div>
+              </article>
+              <article class="applied_box">
+                <div class = "applied_info">
+                   <div class = "applied_name"> CptS 121 </div>
+                   <div class = "applied_professor"> Andy O'fallon </div>
+                   <div class = "applied_status"> Pending </div>
+                 </div>
+                 <div class = "applied_button">
+                    <button type = "select_btn" class = "del_btn btn-outline-danger"> X </button>
+                </div>
+              </article>
+
+            </section>
+        </section>
+    </div>
+
+
+     <div id="display_courses" class="tabcontent">
+        <h2 style="color: grey; text-align:center;">COURSES</h2>
+        <section class="course_list">
+          <article class="course_box">
+            <div class = "course_info">
+               <div class = "course_name"> CptS 121 </div>
+               <div class = "course_prof"> Andy O'Fallon </div>
+               <div class = "course_section"> Lab Section 1 </div>
+             </div>
+             <div class = "course_button">
+                <button type = "select_btn" class = "btn btn-outline-secondary"> Apply </button>
+            </div>
+          </article>
+
+
+        </section>
+
+
+     </div>
+
+
+    <div id="add-course" class="tabcontent">
+      <form id="additional_s" method="POST">
+        <div class="enter_major">
+          <div class="section_text">Major</div>
+          <input type="text"  class="enter_major_input" placeholder="Enter Major" id="Major">
+        </div>
+        <div class="enter_gpa">
+          <div class="section_text">GPA</div>
+          <select class="gpa_select" attribute='gpa' id="GPA">
+            <option value="4.0">4.0</option>
+            <option value="3.9">3.9</option>
+            <option value="3.8">3.8</option>
+            <option value="3.7">3.7</option>
+            <option value="3.6">3.6</option>
+            <option value="3.5">3.5</option>
+            <option value="3.4">3.4</option>
+            <option value="3.3">3.3</option>
+            <option value="3.2">3.2</option>
+            <option value="3.1">3.1</option>
+            <option value="3.0">3.0</option>
+            <option value="2.9">2.9</option>
+            <option value="2.8">2.8</option>
+            <option value="2.7">2.7</option>
+            <option value="2.6">2.6</option>
+            <option value="2.5">2.5</option>
+            <option value="2.4">2.4</option>
+            <option value="2.3">2.3</option>
+            <option value="2.2">2.2</option>
+            <option value="2.1">2.1</option>
+            <option value="2.0">2.0</option>
+            <option value="1.9">1.9</option>
+            <option value="1.8">1.8</option>
+            <option value="1.7">1.7</option>
+            <option value="1.6">1.6</option>
+            <option value="1.5">1.5</option>
+            <option value="1.4">1.4</option>
+            <option value="1.3">1.3</option>
+            <option value="1.2">1.2</option>
+            <option value="1.1">1.1</option>
+            <option value="1.0">1.0</option>
+            <option value="0.9">0.9</option>
+            <option value="0.8">0.8</option>
+            <option value="0.7">0.7</option>
+            <option value="0.6">0.6</option>
+            <option value="0.5">0.5</option>
+            <option value="0.4">0.4</option>
+            <option value="0.3">0.3</option>
+            <option value="0.2">0.2</option>
+            <option value="0.1">0.1</option>
+            <option value="0.0">0.0</option>
+
+          </select>
+        </div>
+        <div class="graduation_date">
+          <div class="section_text">Graduation Date</div>
+          <select class="month" attribute="m" id=GRAD_month>
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+
+          </select>
+          <select class="year" attribute='y' id=GRAD_year>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+            <option value="2029">2029</option>
+            <option value="2030">2030</option>
+
+          </select>
+
+        </div>
+        <div class="served">
+          <div class="section_text">Served Before</div>
+          <select class="y_n" attribute="answer" id="Served">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="buttons">
+          <div class="submit_btn">
+            <input type="submit" class="submit_info btn btn-outline-primary" value="Submit">
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div id="information" class="tabcontent">
+
+    </div>
+</body>
+</html>

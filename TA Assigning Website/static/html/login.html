@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="scripts/login.js"></script>
+    <script type="text/javascript">
+     // This is a jQuery convention to say that once all the files
+     // load, the function Login.start() should run.
+     // This function is defined in the login.js
+        $(function () {
+           Login().start();
+        });
+    </script>
+
+	<title>Log On</title>
+	<link rel="stylesheet" type="text/css" href="styles/login.css">
+</head>
+<body>
+	<div class="login">
+		<div class = "wsu_logo">
+			<img src = "images/wsu_shield.png" alt = "wsu_logo" style="width:200px;height200px;">
+		</div>
+		<form id="login_input" method="POST">
+			<div class="username">
+				<div class="section_text">Username</div>
+				<input class="username_input" type="text" placeholder=" Username" id="user">
+			</div>
+			<div class="password">
+				<div class="section_text">Password</div>
+				<input class="password_input" type="password" placeholder=" Password" id="pass">
+			</div>
+			<div class = "buttons">
+				<div class = "submit_btn">
+					<input type="submit" class="submit_login btn btn-outline-primary" value="Log In">
+				</div>
+				<div class = "create_btn">
+					<input type="button" class="create_account btn btn-outline-primary" value="Create Account" onclick="location.href='create.html';">
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
