@@ -1,5 +1,0 @@
-load config/dictLoad1.json
-load config/dictLoad2.json
-define BATTLE
-unload config/dictUnload1.json
-define BAttlE
